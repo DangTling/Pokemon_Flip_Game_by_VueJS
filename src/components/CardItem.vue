@@ -17,7 +17,8 @@ interface EMITS {
 
 const isFlipped = ref(false)
 const emit = defineEmits<EMITS>()
-const windowHeight = window.innerHeight
+const windowHeight =window.innerWidth<=500 ? 600 :window.innerHeight
+
 
 const props = defineProps<PROPS>()
 

@@ -52,6 +52,7 @@ const handleStart = (totalBlock:number) => {
   color: var(--light);
 }
 
+
 .screen h1 {
   font-size: 4.5rem;
   text-transform: uppercase;
@@ -98,4 +99,43 @@ const handleStart = (totalBlock:number) => {
   font-size: 1.25rem;
   margin-top: 0.5rem;
 }
+
+@media screen and (max-width: 500px) {
+  .screen {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+  }
+  .screen h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  .modes  button {
+    font: var(--font);
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    border: 1px solid var(--light);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+  }
+}
+
 </style>

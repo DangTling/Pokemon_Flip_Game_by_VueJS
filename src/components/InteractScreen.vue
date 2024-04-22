@@ -11,7 +11,9 @@ interface EMITS {
   (e:string):void
 }
 
-const windowHeight = window.innerHeight
+const windowHeight =window.innerWidth<=800 ? 550 :window.innerHeight
+
+
 const emit = defineEmits<EMITS>()
 const arr = ref<any>([])
 const props = defineProps<PROPS>()
@@ -88,5 +90,31 @@ onMounted(() => {
   display: flex;
   flex-wrap: wrap;
   margin: 2rem auto;
+}
+
+@media screen and (max-width: 500px) {
+  .screen {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--dark);
+    color: var(--light);
+  }
+
+  .screen__inner {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    justify-content: center;
+    align-content: center;
+  }
 }
 </style>
