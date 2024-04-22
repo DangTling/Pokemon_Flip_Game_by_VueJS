@@ -20,7 +20,6 @@ const props = defineProps<PROPS>()
 
 const handleCheck = (e:any) => {
   arr.value.push(e)
-
   if (arr.value.length === 2 && arr.value[0].value === arr.value[1].value) {
     handleClearArr()
     const disabledElements = document.querySelectorAll('.disabled')
