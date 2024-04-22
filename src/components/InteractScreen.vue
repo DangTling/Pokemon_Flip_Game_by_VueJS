@@ -45,7 +45,7 @@ onMounted(() => {
     text: "Because it's a  demo version, please play slowly!",
     icon: 'info'
   })
-  // alert("")
+
 })
 </script>
 
