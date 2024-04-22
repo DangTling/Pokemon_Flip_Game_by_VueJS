@@ -71,7 +71,7 @@ watchEffect(() => {
       <div class="card_face card_back">
         <div
           class="card_content"
-          :style="{ backgroundImage: `url(${'/src/assets/' + props.imgUrl})` }"
+          :style="{ backgroundImage: `url(${'https://raw.githubusercontent.com/DangTling/Pokemon_Flip_Game_by_VueJS/main/src/assets/' + props.imgUrl})` }"
         ></div>
       </div>
     </div>
